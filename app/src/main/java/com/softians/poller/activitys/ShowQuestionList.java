@@ -255,10 +255,6 @@ public class ShowQuestionList extends AppCompatActivity {
                 };
                 task2.execute("");
 
-
-
-
-
             }
 
         });

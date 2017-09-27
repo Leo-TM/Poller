@@ -12,6 +12,10 @@
         <item name="android:windowBackground">@drawable/splash_screen</item>
     </style>
 
+    <style name="NoActionsStats" parent="Theme.AppCompat.Light.NoActionBar"
+        >
+    </style>
+
 
     <style name="MyToolbar" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:background">#FF0000</item>

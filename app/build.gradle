@@ -51,6 +51,7 @@ dependencies {
 dependencies {
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
     compile 'com.android.volley:volley:1.0.0'
+    compile 'com.github.lzyzsd:circleprogress:1.2.1'
 }
 dependencies {
     compile 'com.android.support.constraint:constraint-layout:+'
@@ -59,6 +60,9 @@ dependencies {
     compile 'com.google.firebase:firebase-messaging:10.0.1'
 }
 apply plugin: 'com.google.gms.google-services'
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
 dependencies {
     compile 'com.android.support.constraint:constraint-layout:+'
 }

@@ -10,4 +10,7 @@
     <string name="radio_female">Football</string>
     <string name="tennis">tennies</string>
     <string name="chase">Chess</string>
+    <string name="tests_taken">Tests Taken</string>
+    <string name="last_score">Last Score</string>
+    <string name="_7">0</string>
 </resources>
