@@ -16,7 +16,7 @@ import com.softians.poller.R;
 import customfonts.MyTextView;
 
 public class LoginRegister extends AppCompatActivity {
-
+    //checking how it goes
     ImageView logoclick ;
     MyTextView signin,signup;
     ConstraintLayout constraintLayout;
