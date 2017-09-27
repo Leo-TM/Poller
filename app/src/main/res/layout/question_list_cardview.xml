@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/question_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:padding="2dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/hiden"
+               android:text="waters"
+               android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/questionTV"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Question"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/questionTV"
+                android:id="@+id/answerET"
+                android:hint="Your answer here"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textSize="15sp"
+
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

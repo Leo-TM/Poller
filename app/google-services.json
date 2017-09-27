@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "655790265476",
+    "firebase_url": "https://poller-89a16.firebaseio.com",
+    "project_id": "poller-89a16",
+    "storage_bucket": "poller-89a16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655790265476:android:bb815b5163c15b44",
+        "android_client_info": {
+          "package_name": "com.softians.poller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655790265476-kpmfcaib1isvb2sae6chitbvvar6v5ht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.softians.poller",
+            "certificate_hash": "d235763aa3465ab7e8b0f7ca1f156063a35bba9e"
+          }
+        },
+        {
+          "client_id": "655790265476-dbshilgbodumt8c484j9k3islbi7s26u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD646t1D1HlJxmlIFaTTIa8NeEbGKAnuio"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655790265476-dbshilgbodumt8c484j9k3islbi7s26u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

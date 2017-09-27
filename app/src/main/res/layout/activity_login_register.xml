@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/constraint"
+    android:layout_height="match_parent"
+    tools:context="com.softians.poller.activitys.LoginRegister"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:orientation="vertical"
+        android:background="@drawable/sea_opt">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:id="@+id/onaddi"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/adidas1"
+                android:layout_gravity="center">
+
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ic_user">
+                </ImageView>
+                <customfonts.MyEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/usrtf"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="#fff"
+                        android:hint="Username"
+                        android:letterSpacing="0.025"
+                        android:background="#00000000"
+                        android:textColorHint="#fff"
+                        android:textSize="16dp"
+                        android:padding="12dp"/>
+            </LinearLayout>>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#fff"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ic_password"/>
+                <customfonts.MyEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pastf"
+                    android:inputType="textPassword"
+                    android:textColor="#fff"
+                    android:hint="Password"
+                    android:letterSpacing="0.025"
+                    android:background="#00000000"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp"
+                    android:padding="12dp"/>
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#fff"
+                />
+            <customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/sin"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textSize="25dp"
+                android:background="@drawable/angle"
+                android:textColor="#fff"
+                android:letterSpacing="0.025"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="135dp"/>
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+
+            <customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textColor="#fff"
+                android:letterSpacing="0.025"
+                android:textSize="14dp"
+                />
+            <customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:id="@+id/sign_up"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                android:letterSpacing="0.025"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

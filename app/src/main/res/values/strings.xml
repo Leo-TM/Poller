@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Poller</string>
+    <string name="title_activity_main">Poller</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="radio_male">Cricket</string>
+    <string name="radio_female">Football</string>
+    <string name="tennis">tennies</string>
+    <string name="chase">Chess</string>
+</resources>
