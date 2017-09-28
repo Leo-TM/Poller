@@ -42,7 +42,7 @@ public class LoginRegister extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ints = new Intent(LoginRegister.this,Tablay.class);
+                Intent ints = new Intent(LoginRegister.this,ProfilePage.class);
                 startActivity(ints);
             }
         });

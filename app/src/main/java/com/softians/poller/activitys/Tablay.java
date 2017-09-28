@@ -29,6 +29,7 @@ public class Tablay extends AppCompatActivity {
     Toolbar toolbar;
     TabLayout tablayout;
     ViewPager viewPager;
+    public static int defaultPos = 0;
     private BroadcastReceiver mRegistrationBroadcastReceiver ;
     ViewPagerAdapter viewPagerAdapter;
 
@@ -53,6 +54,9 @@ public class Tablay extends AppCompatActivity {
                 }
             }
         };
+        int page = getIntent().getIntExtra("position",defaultPos);
+        viewPager.setCurrentItem(page);
+
         displayFirebaseRegId();
     }
     private void displayFirebaseRegId()

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softians.poller.activitys.ProfilePage"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        android:background="@drawable/angry_grad"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="65">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/circleImageView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/userNameTV"
+            android:textColor="@color/blacks"
+            app:layout_constraintLeft_toRightOf="@+id/circleImageView"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintTop_toTopOf="@+id/circleImageView"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+            android:layout_marginBottom="8dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_weight="100">
+
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Stats"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#3D70E8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/border"
+            android:padding="15dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp"
+            android:id="@+id/statsTV" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#3D70E8"
+            android:background="@drawable/border"
+            android:padding="15dp"
+            android:id="@+id/logoutTV"
+            app:layout_constraintLeft_toLeftOf="@+id/statsTV"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/statsTV"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="@+id/statsTV"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

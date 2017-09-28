@@ -14,7 +14,7 @@
         <activity
             android:name=".activitys.LoginRegister"
             android:theme="@style/NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".activitys.Tablay"
             android:theme="@style/NoActionBar" />
@@ -44,6 +44,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activitys.ProfilePage"
+            android:theme="@style/NoActionsStats">
         </activity>
     </application>
 
