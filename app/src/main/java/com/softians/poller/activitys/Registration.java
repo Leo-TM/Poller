@@ -43,7 +43,7 @@ public class Registration extends AppCompatActivity {
     private LinearLayout coolLinearLayout;
     AlertDialog.Builder builder ;
     public static String userName,email,phone,address,password,cnfpassword,userId,imageLink,token;
-    String reg_url = "http://192.168.1.104:802/poller/register.php";
+    String reg_url = Config.link+"register.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

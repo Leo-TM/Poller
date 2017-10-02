@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     private static final String TAG = MyFirebaseInstanceIDService.class.getSimpleName();
-    String tok_url = "http://192.168.1.104:802/poller/tokensetter.php";
+    String tok_url = Config.link+"tokensetter.php";
 //    SharedPreferences pref = getApplicationContext().getSharedPreferences(Config.SHARED_PREF, 0);
     @Override
     public void onTokenRefresh() {

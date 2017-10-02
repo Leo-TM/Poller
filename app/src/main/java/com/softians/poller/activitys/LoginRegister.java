@@ -41,7 +41,7 @@ public class LoginRegister extends AppCompatActivity {
     MyEditText email,pas;
     public static String userId,userName;
     AlertDialog.Builder builder ;
-    String log_url = "http://192.168.1.104:802/poller/login.php";
+    String log_url = Config.link+"login.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         SystemClock.sleep(1000);

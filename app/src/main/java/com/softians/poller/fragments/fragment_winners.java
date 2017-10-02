@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.softians.poller.R;
 import com.softians.poller.adapter.WinnerAdapter;
+import com.softians.poller.app.Config;
 import com.softians.poller.model.WinnerDataModel;
 
 import org.json.JSONArray;
@@ -80,7 +81,7 @@ public class fragment_winners extends Fragment {
             protected Void doInBackground(Integer... params) {
                 OkHttpClient client = new OkHttpClient();
                 //Request request =new Request.Builder().url(String.format("%s%s%d", CommonFloatingThings.links,"json_provider_for_recycler.php?id=",id)).build();
-                Request request =new Request.Builder().url("http://192.168.1.104:802/poller/winners_feed.php?id="+id).build();
+                Request request =new Request.Builder().url(Config.link+"winners_feed.php?id="+id).build();
                 try {
                     Response response = client.newCall(request).execute();
                     JSONArray jArray = new JSONArray(response.body().string());

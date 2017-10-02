@@ -72,7 +72,7 @@ public class fragment_user_stats extends Fragment{
             @Override
             protected Void doInBackground(Integer... params) {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://192.168.1.104:802/poller/stats.php?id="+id).build();
+                Request request = new Request.Builder().url(Config.link+"stats.php?id="+id).build();
 
                 try {
                     Response response = client.newCall(request).execute();

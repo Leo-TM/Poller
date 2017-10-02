@@ -23,6 +23,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.softians.poller.R;
 import com.softians.poller.adapter.QuestionListAdapter;
+import com.softians.poller.app.Config;
 import com.softians.poller.model.QuestionDataModel;
 import com.victor.loading.rotate.RotateLoading;
 
@@ -153,7 +154,7 @@ public class ShowQuestionList extends AppCompatActivity {
                     protected Void doInBackground(String... params) {
                         OkHttpClient okHttpClient = new OkHttpClient().newBuilder().connectTimeout(10,TimeUnit.SECONDS).writeTimeout(10,TimeUnit.SECONDS).readTimeout(30,TimeUnit.SECONDS).build();
                         RequestBody requestBody2 = RequestBody.create(JSON,finalJson);
-                        Request request2 =new Request.Builder().url("http://192.168.1.104:802/poller/jsonQuestionAnswer.php").post(requestBody2).build();
+                        Request request2 =new Request.Builder().url(Config.link+"jsonQuestionAnswer.php").post(requestBody2).build();
 
                         try {
                             Response response2 = okHttpClient.newCall(request2).execute();
@@ -268,7 +269,7 @@ public class ShowQuestionList extends AppCompatActivity {
             @Override
             protected Void doInBackground(Integer... params) {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://192.168.1.104:802/poller/list_of_questions_feed.php?id="+id+"&topic="+topicId).build();
+                Request request = new Request.Builder().url(Config.link+"list_of_questions_feed.php?id="+id+"&topic="+topicId).build();
                 try {
                     Response response = client.newCall(request).execute();
                     JSONArray jsonArray = new JSONArray(response.body().string());
