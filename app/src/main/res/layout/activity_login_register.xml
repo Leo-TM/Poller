@@ -25,11 +25,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <ImageView
-                android:layout_height="80dp"
-                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_width="80dp"
                 android:id="@+id/onaddi"
                 android:layout_marginTop="100dp"
-                android:background="@drawable/adidas1"
+                android:background="@drawable/final_logo2"
                 android:layout_gravity="center">
 
             </ImageView>

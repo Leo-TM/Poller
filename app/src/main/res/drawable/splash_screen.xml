@@ -6,6 +6,8 @@
     <item android:drawable="@color/myColor"/>
     <item>
         <bitmap android:gravity = "center"
-            android:src = "@mipmap/ic_logos"/>
+
+            android:src = "@drawable/final_logo2"/>
     </item>
+
 </layer-list>

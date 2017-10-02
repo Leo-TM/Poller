@@ -45,7 +45,7 @@ public class Tablay extends AppCompatActivity {
                 if(intent.getAction().equals(Config.REGISTRATION_COMPLETE))
                 {
                     FirebaseMessaging.getInstance().subscribeToTopic(Config.TOPIC_GLOBAL);
-                    displayFirebaseRegId();
+                    //displayFirebaseRegId();
                 }
                 else if(intent.getAction().equals(Config.PUSH_NOTIFICATION))
                 {
@@ -57,7 +57,7 @@ public class Tablay extends AppCompatActivity {
         int page = getIntent().getIntExtra("position",defaultPos);
         viewPager.setCurrentItem(page);
 
-        displayFirebaseRegId();
+        //displayFirebaseRegId();
     }
     private void displayFirebaseRegId()
     {

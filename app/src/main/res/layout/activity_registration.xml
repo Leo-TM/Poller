@@ -24,11 +24,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <ImageView
-                android:layout_height="80dp"
-                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_width="110dp"
                 android:id="@+id/onaddi"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/adidas1"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/final_logo3"
                 android:layout_gravity="center">
 
             </ImageView>
@@ -36,11 +37,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"></LinearLayout>
+            android:layout_height="30dp">
+        </LinearLayout>
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:id="@+id/coolLinearLayout"
             android:orientation="vertical">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <customfonts.MyEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/uname"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:textColor="#fff"
+                    android:hint="User Name"
+                    android:letterSpacing="0.025"
+                    android:background="#00000000"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp"
+                    android:padding="12dp"/>
+            </LinearLayout>>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#fff"
+                />
+
             <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"

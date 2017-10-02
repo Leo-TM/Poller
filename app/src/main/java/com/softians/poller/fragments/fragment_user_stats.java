@@ -1,16 +1,17 @@
 package com.softians.poller.fragments;
 
 
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.softians.poller.R;
+import com.softians.poller.app.Config;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,6 +24,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
+import static android.content.Context.MODE_PRIVATE;
+
 public class fragment_user_stats extends Fragment{
     private com.github.lzyzsd.circleprogress.DonutProgress pDonutProgress;
     private View pFirstView;
@@ -32,11 +35,18 @@ public class fragment_user_stats extends Fragment{
     private TextView pTestsTaken;
     public static String nots;
     public static int percent;
-
+    //SharedPreferences sharedPref = (Tablay.class).getSharedPreferences(Config.SHARED_PREF,MODE_PRIVATE);
+    //int userId = Integer.parseInt(sharedPref.getString("userId","0"));
+    int userId;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+        SharedPreferences sharedPref = getActivity().getSharedPreferences(Config.SHARED_PREF,MODE_PRIVATE);
+        userId = Integer.parseInt(sharedPref.getString("userId","0"));
+
 
         View view = inflater.inflate(R.layout.fragment_fragment_user_stats,
                 container, false);
@@ -45,13 +55,12 @@ public class fragment_user_stats extends Fragment{
         pValueForTotalTests = (TextView) view.findViewById(R.id.ValueForTotalTests);
         //pTestsTaken = (TextView) view.findViewById(R.id.TestsTaken);
         try {
-            getContents(1);
+            getContents(userId);
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Log.d("***bf setting",String.valueOf(percent));
         pDonutProgress.setProgress((percent));
         pValueForTotalTests.setText(nots);
         return view;
